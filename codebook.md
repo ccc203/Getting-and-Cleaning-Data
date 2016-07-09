@@ -56,7 +56,7 @@ Codebook
 
 <h2><a id="user-content-dataset-structure" class="anchor" href="#dataset-structure" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Dataset structure</h2>
 
-<div class="highlight highlight-source-r"><pre>str(<span class="pl-smi">dtTidy</span>)</pre></div>
+<div class="highlight highlight-source-r"><pre>str(<span class="pl-smi">data2</span>)</pre></div>
 
 <pre><code>## Classes 'data.table' and 'data.frame':   11880 obs. of  11 variables:
 ##  $ subject         : int  1 1 1 1 1 1 1 1 1 1 ...
@@ -76,7 +76,7 @@ Codebook
 
 <h2><a id="user-content-list-the-key-variables-in-the-data-table" class="anchor" href="#list-the-key-variables-in-the-data-table" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>List the key variables in the data table</h2>
 
-<div class="highlight highlight-source-r"><pre>key(<span class="pl-smi">dtTidy</span>)</pre></div>
+<div class="highlight highlight-source-r"><pre>key(<span class="pl-smi">data2</span>)</pre></div>
 
 <pre><code>## [1] "subject"          "activity"         "featDomain"      
 ## [4] "featAcceleration" "featInstrument"   "featJerk"        
@@ -85,7 +85,7 @@ Codebook
 
 <h2><a id="user-content-show-a-few-rows-of-the-dataset" class="anchor" href="#show-a-few-rows-of-the-dataset" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Show a few rows of the dataset</h2>
 
-<div class="highlight highlight-source-r"><pre><span class="pl-smi">dtTidy</span></pre></div>
+<div class="highlight highlight-source-r"><pre><span class="pl-smi">data2</span></pre></div>
 
 <pre><code>##        subject         activity featDomain featAcceleration featInstrument
 ##     1:       1           LAYING       Time               NA      Gyroscope
@@ -115,7 +115,7 @@ Codebook
 
 <h2><a id="user-content-summary-of-variables" class="anchor" href="#summary-of-variables" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Summary of variables</h2>
 
-<div class="highlight highlight-source-r"><pre>summary(<span class="pl-smi">dtTidy</span>)</pre></div>
+<div class="highlight highlight-source-r"><pre>summary(<span class="pl-smi">data2</span>)</pre></div>
 
 <pre><code>##     subject                   activity    featDomain  featAcceleration
 ##  Min.   : 1.0   LAYING            :1980   Time:7200   NA     :4680    
@@ -142,7 +142,7 @@ Codebook
 
 <h2><a id="user-content-list-all-possible-combinations-of-features" class="anchor" href="#list-all-possible-combinations-of-features" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>List all possible combinations of features</h2>
 
-<div class="highlight highlight-source-r"><pre><span class="pl-smi">dtTidy</span>[, .<span class="pl-smi">N</span>, <span class="pl-v">by</span> <span class="pl-k">=</span> c(names(<span class="pl-smi">dtTidy</span>)[grep(<span class="pl-s"><span class="pl-pds">"</span>^feat<span class="pl-pds">"</span></span>, names(<span class="pl-smi">dtTidy</span>))])]</pre></div>
+<div class="highlight highlight-source-r"><pre><span class="pl-smi">dtTidy</span>[, .<span class="pl-smi">N</span>, <span class="pl-v">by</span> <span class="pl-k">=</span> c(names(<span class="pl-smi">dtTidy</span>)[grep(<span class="pl-s"><span class="pl-pds">"</span>^feat<span class="pl-pds">"</span></span>, names(<span class="pl-smi">data2</span>))])]</pre></div>
 
 <pre><code>##     featDomain featAcceleration featInstrument featJerk featMagnitude
 ##  1:       Time               NA      Gyroscope       NA            NA
@@ -282,4 +282,4 @@ Codebook
 ##     featVariable featAxis   N
 </code></pre>
 
-<h2><a id="user-content-save-to-file" class="anchor" href="#save-to-file" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Save to file</h2>
+
