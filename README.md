@@ -33,6 +33,7 @@ Objectives
 
 
 Steps to reproduce this project
+-----------------
 
 1. Open the R script run_analysis.r using a text editor.
 2. Run the R script run_analysis.r.
