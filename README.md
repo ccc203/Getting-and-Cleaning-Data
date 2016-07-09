@@ -37,3 +37,9 @@ Steps to reproduce this project
 
 1. Open the R script run_analysis.r using Rstudio.
 2. Run the R script run_analysis.r.
+
+Outputs produced
+-----------------
+
+1. Tidy dataset file tidydata.txt
+2. Codebook file codebook.md
